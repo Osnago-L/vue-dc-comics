@@ -2,18 +2,21 @@
   <div>
     <FooterMerch/>
     <FooterMap/>
+    <FooterSocial/>
   </div>
 </template>
 
 <script>
 import FooterMerch from "./FooterMerch.vue";
 import FooterMap from "./FooterMap.vue";
+import FooterSocial from "./FooterSocial.vue";
 
 export default {
   name: 'Footer',
   components: {
     FooterMerch,
-    FooterMap
+    FooterMap,
+    FooterSocial
   }
 }
 </script>
