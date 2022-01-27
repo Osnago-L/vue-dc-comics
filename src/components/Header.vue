@@ -1,5 +1,5 @@
 <template>
-  <div class="banner">
+  <div class="banner container">
     <img src="../assets/img/dc-logo.png" alt="">
     <nav>
       <ul>
@@ -55,16 +55,14 @@ export default {
 <style scoped lang="scss">
 @import "../assets/style/partials/variables.scss";
 .banner{
-  width: 90%;
   height: 150px;
-  padding: 0 100px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   img{
     width: 80px;
+    cursor: pointer;
   }
 }
 nav{
@@ -75,7 +73,7 @@ nav{
     li{
       margin: 0px 10px;
       font-weight: bold;
-      font-size: 13px;
+      font-size: 14px;
       text-transform: uppercase;
     }
     li:hover{
