@@ -1,16 +1,19 @@
 <template>
   <div>
-    <Merch/>
+    <FooterMerch/>
+    <FooterMap/>
   </div>
 </template>
 
 <script>
-import Merch from "./nthComp/Footer-comp/Merch.vue";
+import FooterMerch from "./FooterMerch.vue";
+import FooterMap from "./FooterMap.vue";
 
 export default {
   name: 'Footer',
   components: {
-    Merch
+    FooterMerch,
+    FooterMap
   }
 }
 </script>

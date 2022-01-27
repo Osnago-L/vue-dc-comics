@@ -1,5 +1,5 @@
 <template>
-  <div class="blue-footer">
+  <div class="blue-footer">   
       <div class="container">
         <div v-for="(element,index) in merchItems" :key="index" class="merch-item">
           <img :src="element.img" alt="">
@@ -17,23 +17,23 @@ export default {
       merchItems:[
           {
           text: "Digital Comics",
-          img: "../../../assets/img/buy-comics-digital-comics.png"
+          img: require("../assets/img/buy-comics-digital-comics.png")
           },
           {
-          text: "Digital Comics",
-          img: "../../../assets/img/buy-comics-digital-comics.png"
+          text: "DC Merchandise",
+          img: require("../assets/img/buy-comics-merchandise.png")
           },
           {
-          text: "Digital Comics",
-          img: "../../../assets/img/buy-comics-digital-comics.png"
+          text: "Subscription",
+          img: require("../assets/img/buy-comics-subscriptions.png")
           },
           {
-          text: "Digital Comics",
-          img: "../../../assets/img/buy-comics-digital-comics.png"
+          text: "Comic Shop Locator",
+          img: require("../assets/img/buy-comics-shop-locator.png")
           },
           {
-          text: "Digital Comics",
-          img: "../../../assets/img/buy-comics-digital-comics.png"
+          text: "DC Power Visa",
+          img: require("../assets/img/buy-dc-power-visa.svg")
           },
       ]
     }
@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../../assets/style/partials/variables.scss";
+@import "../assets/style/partials/variables.scss";
 .blue-footer{
   height: 200px;
   background-color: $main-color-blue;
@@ -51,14 +51,21 @@ export default {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
   }
 }
 .merch-item{
   display: flex;
-
+  align-items: center;
+  
   img{
-    width: 200px;
+    width: 45px;
+    height: 60px;
     margin-right: 15px;
+  }
+  span{
+    color: white;
+    text-transform: uppercase;
   }
 }
 
