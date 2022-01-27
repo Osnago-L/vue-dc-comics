@@ -1,12 +1,17 @@
 <template>
-  <div >
-
+  <div>
+    <Merch/>
   </div>
 </template>
 
 <script>
+import Merch from "./nthComp/Footer-comp/Merch.vue";
+
 export default {
   name: 'Footer',
+  components: {
+    Merch
+  }
 }
 </script>
 
