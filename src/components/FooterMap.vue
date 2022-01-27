@@ -1,18 +1,115 @@
 <template>
   <div class="map">
-      <div class="container"></div>
+      <div class="container">
+        <div class="map-list">
+          <ul v-for="ul,indexUL in mapCategories " :key="indexUL">{{ul.text}}
+            <li v-for="li,indexLI in mapCategories[indexUL].content " :key="indexLI">{{li.text}}</li>
+          </ul>
+        </div>
+        <img src="../assets/img/dc-logo-bg.png" alt="">
+      </div>
   </div>
 </template>
 
 <script>
 export default {
-    name:"Map",
+    name:"FooterMap",
     data() {
     return{
-      navItems:[
+      mapCategories:[
           {
-          text: "Digital Comics",
-          img: "../assets/img/buy-comics-digital-comics.png"
+          text: "DC Comics",
+          content:[
+            {
+              text: "Elemento1"
+            },
+            {
+              text: "Elemento2"
+            },
+            {
+              text: "Elemento3"
+            },
+            {
+              text: "Elemento4"
+            },
+            {
+              text: "Elemento5"
+            },
+            {
+              text: "Elemento5"
+            },
+          ]
+          },
+          {
+          text: "Shop",
+          content:[
+            {
+              text: "Elemento6"
+            },
+            {
+              text: "Elemento7"
+            },
+            {
+              text: "Elemento8"
+            },
+            {
+              text: "Elemento9"
+            },
+            {
+              text: "Elemento10"
+            },
+            {
+              text: "Elemento11"
+            },
+          ]
+          },
+          {
+          text: "DC",
+          content:[
+            {
+              text: "Elemento12"
+            },
+            {
+              text: "Elemento13"
+            },
+            {
+              text: "Elemento14"
+            },
+            {
+              text: "Elemento15"
+            },
+            {
+              text: "Elemento16"
+            },
+            {
+              text: "Elemento171"
+            },
+
+          ]
+          },
+          {
+          text: "Sites",
+          content:[
+            {
+              text: "Elemento18"
+            },
+            {
+              text: "Elemento19"
+            },
+            {
+              text: "Elemento20"
+            },
+            {
+              text: "Elemento21"
+            },
+            {
+              text: "Elemento22"
+            },
+            {
+              text: "Elemento23"
+            },
+
+          ]
           },
       ]
     }
@@ -24,9 +121,48 @@ export default {
 @import "../assets/style/partials/variables.scss";
 .map{
   background-image: url("../assets/img/footer-bg.jpg");
-  height: 500px;
+  height: 380px;
   background-position: cover;
-  background-size: 100vw 500px;
+  background-size: 100vw 400px;
+  padding: 30px 0;
+  overflow-y: hidden;
+  
+
+  &>div{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+      width:600px;
+      height: 600px;
+    }
+  }
+}
+.map-list{
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  ul{
+    width: 100px;
+    margin-bottom: 15px;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    li{
+      color: grey;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  }
 }
 </style>
 
