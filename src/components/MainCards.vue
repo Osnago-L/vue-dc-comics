@@ -1,6 +1,6 @@
 <template>
   <div class="cards">
-      <div class="cardimage"></div>
+      <img :src="cardsData.thumb" alt="">
       <span>{{cardsData.series}}</span>
   </div>
 </template>
@@ -16,23 +16,21 @@ export default {
 
 <style lang="scss" scoped>
 .cards{
-    width: 120px;
+    width: 200px;
     display: flex;
     flex-direction: column;
 
-    .cardimage{
-        background-image: url("https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX");
-        background-position: center;
-        background-position-y: 0px;
-        background-size: cover;
+    img{
+        object-position: 0px 0px;
+        object-fit: cover;
         width: 100%;
-        height: 130px;
-        
+        height: 230px;
     }
+
     span{
-        margin-top: 5px;
+        margin-top: 15px;
         color: white;
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 </style>

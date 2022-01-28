@@ -7,7 +7,6 @@
           v-for="element,index in Cards" 
           :key="index"
           :cards-data="element"
-
         />
       </div>
     </div>
@@ -118,7 +117,8 @@ export default {
     padding: 80px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 60px;
 
     span{
     color: white;
