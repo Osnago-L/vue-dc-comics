@@ -59,7 +59,7 @@ export default {
   align-items: center;
   
   img{
-    width: 45px;
+    width: 50px;
     height: 57px;
     margin-right: 15px;
   }

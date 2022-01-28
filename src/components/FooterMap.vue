@@ -35,9 +35,6 @@ export default {
             {
               text: "Elemento5"
             },
-            {
-              text: "Elemento5"
-            },
           ]
           },
           {
@@ -48,18 +45,6 @@ export default {
             },
             {
               text: "Elemento7"
-            },
-            {
-              text: "Elemento8"
-            },
-            {
-              text: "Elemento9"
-            },
-            {
-              text: "Elemento10"
-            },
-            {
-              text: "Elemento11"
             },
           ]
           },
@@ -80,6 +65,15 @@ export default {
             },
             {
               text: "Elemento16"
+            },
+            {
+              text: "Elemento171"
+            },
+            {
+              text: "Elemento171"
+            },
+            {
+              text: "Elemento171"
             },
             {
               text: "Elemento171"
@@ -141,14 +135,13 @@ export default {
   }
 }
 .map-list{
-  width: 600px;
+  width: 500px;
   height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   ul{
-    width: 100px;
     margin-bottom: 15px;
     list-style: none;
     color: white;

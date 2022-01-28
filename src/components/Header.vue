@@ -66,19 +66,26 @@ export default {
   }
 }
 nav{
+  height: 100%;
+
   ul{
+    height: 100%;
     list-style: none;
     display: flex;
 
     li{
+      height: 100%;
       margin: 0px 10px;
       font-weight: bold;
       font-size: 14px;
       text-transform: uppercase;
+      display: flex;
+    align-items: center;
     }
     li:hover{
       color: $main-color-blue;
       cursor: pointer;
+      border-bottom: 4px solid $main-color-blue;
     }
   }
 }
