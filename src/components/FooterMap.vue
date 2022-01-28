@@ -149,11 +149,12 @@ export default {
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
+    
     li{
       color: grey;
       text-transform: capitalize;
-      font-weight: bold;
-      font-size: 16px;
+      font-weight: normal;
+      font-size: 14px;
       margin: 10px 0;
       cursor: pointer;
     }
