@@ -2,19 +2,22 @@
   <div>
     <div class="jumbotron"></div>
     <div class="main">
-      <div class="container">
+      <div class="category">CURRENT SERIES</div>
+      <div class="cards container">
         <MainCards
           v-for="element,index in Cards" 
           :key="index"
           :cards-data="element"
         />
       </div>
+      <button>Load More</button>
     </div>
   </div>
 </template>
 
 <script>
 import MainCards from "./MainCards.vue";
+
 export default {
   name: 'Main',
   components:{
@@ -103,16 +106,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/style/partials/variables.scss";
 .jumbotron{
   background-image: url("../assets/img/jumbotron.jpg");
   background-size: cover;
   height: 450px;
 }
 .main{
+  position: relative;
   background-color: rgba(0, 0, 0, 0.884);
   min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  &>div{
+  .category{
+    background: $main-color-blue;
+    color: white;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    top: -20px;
+    left: 80px;
+  }
+  .cards.container{
     height: 100%;
     padding: 80px 0;
     display: flex;
@@ -127,4 +147,14 @@ export default {
     }
   }
 }
+  button{
+    background: $main-color-blue;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
 </style>
