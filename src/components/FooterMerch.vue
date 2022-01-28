@@ -57,6 +57,7 @@ export default {
 .merch-item{
   display: flex;
   align-items: center;
+  cursor: pointer;
   
   img{
     width: 50px;

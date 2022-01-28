@@ -148,12 +148,14 @@ export default {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
     li{
       color: grey;
       text-transform: capitalize;
       font-weight: bold;
       font-size: 16px;
       margin: 10px 0;
+      cursor: pointer;
     }
   }
 }

@@ -72,9 +72,11 @@ export default {
     
     span{
     color: $main-color-blue;
+     cursor: pointer;
     }
     img{
       margin: 0 6px ;
+       cursor: pointer;
     }
   }
 }

@@ -2,8 +2,9 @@
   <div>
     <div class="jumbotron"></div>
     <div class="main">
-      <div class="category">CURRENT SERIES</div>
+      
       <div class="cards container">
+        <div class="category">CURRENT SERIES</div>
         <MainCards
           v-for="element,index in Cards" 
           :key="index"
@@ -130,7 +131,6 @@ export default {
     font-size: 25px;
     position: absolute;
     top: -20px;
-    left: 80px;
   }
   .cards.container{
     height: 100%;
